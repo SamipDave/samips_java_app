@@ -4,7 +4,11 @@ pipeline {
     stages {
         stage('gitcheckout') {
             steps {
-                git branch: 'main', url: 'https://github.com/SamipDave/samips_java_app.git'
+                script{
+                    gitCheckout(
+                        branch: "main"
+                        url: "https://github.com/SamipDave/samips_java_app.git"
+                    )
             }
         }
     }
