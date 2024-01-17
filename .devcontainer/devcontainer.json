@@ -1,0 +1,12 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/groovy-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/jenkinsx-cli:1": {
+			"version": "latest"
+		}
+	}
+}
