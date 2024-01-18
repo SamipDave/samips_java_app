@@ -7,7 +7,7 @@ pipeline {
             steps {
                 script{
                    
-                    )
+                }
             }
         }
             stage('unit Test mvn') {
