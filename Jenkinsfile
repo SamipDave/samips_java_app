@@ -13,7 +13,7 @@ pipeline{
             }
         }
     }
-    stage('mvnTest') {
+        stage('mvnTest') {
             steps {
                 script{
                     mvnTest()
@@ -21,4 +21,4 @@ pipeline{
         }
     }
 }
-}    
+}
