@@ -13,10 +13,10 @@ pipeline{
             }
         }
     }
-            stage('mvnTest') {
-                steps {
-                    script{
-                        mvnTest()
+    stage('mvnTest') {
+            steps {
+                script{
+                    mvnTest()
             }
         }
     }
