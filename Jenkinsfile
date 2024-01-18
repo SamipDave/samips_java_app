@@ -1,4 +1,5 @@
 @Library('lib') _
+pipeline{
     agent any
 
     stages {
@@ -13,5 +14,4 @@
         }
     }
 }
-
-    
+}    
