@@ -6,7 +6,7 @@ pipeline {
         stage('gitcheckout') {
             steps {
                 script{
-                   
+                    url: "https://github.com/SamipDave/samips_java_app.git"
                 }
             }
         }
