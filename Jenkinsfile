@@ -10,11 +10,10 @@ pipeline {
                 }
             }
         }
-            stage('unit Test mvn') {
+        stage('unit Test mvn') {
             steps {
                 script{
-                    mvnTest()
-                    
+                    mvnTest()  
             }
         }
     }
