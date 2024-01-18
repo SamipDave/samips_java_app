@@ -1,18 +1,17 @@
 @Library('lib') _
-pipeline {
     agent any
 
     stages {
-        stage('gitcheckout') {
+        stage('Hello') {
             steps {
-                    url: "https://github.com/SamipDave/samips_java_app.git"
-                    branch: "main"
-                }
+                script{
+                    gitCheckout(
+                        branch: "main",
+                        url: "https://github.com/SamipDave/samips_java_app.git"
+                        )
             }
-        }
-        stage('unit Test mvn') {
-            steps {
-                    mvnTest()
         }
     }
 }
+
+    
