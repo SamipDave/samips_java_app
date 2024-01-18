@@ -6,10 +6,15 @@ pipeline {
         stage('gitcheckout') {
             steps {
                 script{
-                    gitCheckout(
-                        branch: "main",
-                        url: "https://github.com/SamipDave/samips_java_app.git"
+                   
                     )
+            }
+        }
+            stage('unit Test mvn') {
+            steps {
+                script{
+                    mvnTest()
+                    
             }
         }
     }
