@@ -16,6 +16,12 @@ pipeline{
                         )
                     }
                 }
+        stage('mvnTest') {
+            steps {
+                script{
+                    mvnTest()
+                    }
+                }
             }
         }
     }
