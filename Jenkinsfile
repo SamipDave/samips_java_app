@@ -9,12 +9,10 @@ pipeline{
     stages {
         stage('gitCheckout') {
             steps {
-                script{
-                    gitCheckout(
-                        branch: "main",
-                        url: "https://github.com/SamipDave/samips_java_app.git"
+            gitCheckout(
+                branch: "main",
+                url: "https://github.com/SamipDave/samips_java_app.git"
                         )
-                    }
                 }
         stage('mvnTest') {
             steps {
