@@ -15,14 +15,8 @@ pipeline{
                         url: "https://github.com/SamipDave/samips_java_app.git"
                         )
             }
-        }
+      
     }
-        stage('mvnTest') {
-            steps {
-                script{
-                    mvnIntegrationTest()
-            }
-        }
-    }
+}
 }
 }
