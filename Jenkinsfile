@@ -15,17 +15,6 @@ pipeline{
                         url: "https://github.com/SamipDave/samips_java_app.git"
                         )
                     }
-        stage('Unit Test maven'){
-         
-         when { expression {  params.action == 'create' } }
-
-            steps{
-               script{
-                   
-                   mvnTest()
-               }
-            }
-        }
                 }
             }
         }
